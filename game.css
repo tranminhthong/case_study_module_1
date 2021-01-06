@@ -1,0 +1,28 @@
+div {
+    height: 900px;
+    width: 950px;
+    border: none;
+    text-align: center;
+}
+
+canvas {
+    background: black;
+}
+
+button {
+    height: 40px;
+    width: 130px;
+    font-size: large;
+    background-color: crimson;
+}
+
+#pause {
+    width: auto;
+    border-collapse: separate;
+    background-color: gold;
+}
+
+body {
+    background-image: linear-gradient( #f82c07 10%, #2511ec 40%, #9e0bc6 50%);
+
+}
