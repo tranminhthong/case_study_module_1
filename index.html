@@ -13,7 +13,6 @@
         <canvas id="myCanvas" width="900" height="600"></canvas>
         <button id="refresh" onclick="plays()">Play</button>
         <button id="pause" onclick="stops()">Pause/Resume</button>
-
     </div>
 </center>
 
@@ -38,7 +37,7 @@
     let arrowLeft = false;
     let arrowRight = false;
     let score = 0;
-    let live = 2;
+    let live = 3;
     let paused = false;
 
     function plays() {
@@ -180,8 +179,8 @@
                 } else {
                     x = Math.random() * (550 - 350) + 350;
                     y = Math.random() * (400 - (canvas.height - 30)) + (canvas.height - 30);
-                    dx = 5;
-                    dy = -5;
+                    dx = dx + 4;
+                    dy = -dy - 4;
                     barX = (canvas.width - barWidth) / 2;
                 }
             }

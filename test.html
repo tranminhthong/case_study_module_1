@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="cv" height="500" width="500" style="background-color: black"></canvas>
+<script>
+    let canvas = document.getElementById("cv");
+    ctx = canvas.getContext('2d');
+    let dx = 5;
+    let dy = -5;
+    let x = 50;
+    let y = 50;
+    let radius = 10
+
+    // function ball() {
+    //     ctx.beginPath();
+    //     ctx.fillStyle = "red";
+    //     ctx.arc(x, y, 20, 0, 2 * Math.PI);
+    //     ctx.fill();
+    //     ctx.closePath();
+    // }
+    //
+    // function draw() {
+    //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    //     ball()
+    //     if (x > canvas.width - 20 || x < 20) {
+    //         dx = -dx
+    //     }
+    //     if (y < 20 || y > canvas.height - 20) {
+    //         dy = -dy
+    //     }
+    //     x += dx;
+    //     y += dy;
+    //     requestAnimationFrame(draw)
+    // }
+    //
+    // draw();
+
+    // function Cc(x,y,radius){
+    //     this.x = x;
+    //     this.y = y;
+    //     this.draw = function (){
+    //         ctx.beginPath();
+    //         ctx.fillStyle = "red";
+    //         ctx.arc(this.x,this.y,radius,0,2*Math.PI);
+    //         ctx.fill();
+    //         ctx.closePath();
+    //     }
+    // }
+    // let ball = new Cc(x,y,radius);
+    //
+    //
+    // function move(){
+    //     ctx.clearRect(0,0,canvas.width,canvas.height);
+    //     ball.draw();
+    //     if (x<20||x>canvas.width-20){
+    //         dx = -dx;
+    //     }
+    //     if (y<20||y>canvas.height-20){
+    //         dy = -dy
+    //     }
+    //     x+=dx;
+    //     y+=dy;
+    //     requestAnimationFrame(move)
+    // }
+    // move();
+
+ctx.fillStyle ="green";
+    ctx.fillRect(50,50,100,200);
+
+</script>
+</body>
+</html>
