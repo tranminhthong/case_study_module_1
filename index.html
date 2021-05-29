@@ -39,10 +39,15 @@
     let score = 0;
     let live = 3;
     let paused = false;
+    check = false;
 
     function plays() {
         document.getElementById("autoplay").play();
-        draw();
+        if (!check) {
+            draw();
+            check = true;
+        }
+
     }
 
     function stops() {
@@ -179,8 +184,6 @@
                 } else {
                     x = Math.random() * (550 - 350) + 350;
                     y = Math.random() * (400 - (canvas.height - 30)) + (canvas.height - 30);
-                    dx = dx + 4;
-                    dy = -dy - 4;
                     barX = (canvas.width - barWidth) / 2;
                 }
             }
